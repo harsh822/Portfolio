@@ -18,7 +18,7 @@
   <body>
     <div class="main-container">
       <div class="sidebar-button">
-        <label for="sidebartoggle" class="toggle">☰</label>
+        <label for="sidebartoggle" class="toggle" onclick="openNav()">☰</label>
       </div>
       <div class="container">
         <div class="heading">
@@ -28,10 +28,22 @@
         <div class="home-page-links">
           <a href="">About</a>
           <a href="">Projects</a>
-          <a href="">Youtube</a>
+          <a href="https://www.youtube.com/c/TechEngineerHarsh" target="_blank"
+            >Youtube</a
+          >
           <a href="">Contact</a>
         </div>
       </div>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a class="sidebar-inside-a" href="#">About</a>
+        <a class="sidebar-inside-a" href="#">Projects</a>
+        <a class="sidebar-inside-a" href="#">Youtube</a>
+        <a class="sidebar-inside-a" href="#">Contact</a>
+      </div>
     </div>
+    <script src="./script/script.js"></script>
   </body>
 </html>
