@@ -1,0 +1,118 @@
+/* html {
+  background-image: url(../utils/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url(../utils/background1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Avenir Light", sans-serif;
+  color: white;
+}
+.toggle {
+  font-size: 50px;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  cursor: pointer;
+}
+.toggle:hover {
+  text-shadow: 3px 4px 7px rgb(166, 12, 255);
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #450161; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.sidebar-inside-a {
+  margin: 15px;
+  border-bottom: 1px solid red;
+  width: 50%;
+}
+.sidebar-inside-a:hover {
+  border-bottom: 3px solid red;
+  background-color: rgba(213, 108, 255, 0.295);
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 190px;
+  font-size: 45px;
+}
+.side-bar-links {
+  padding: 5px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .home-page-links a {
+    font-size: small;
+  }
+  .toggle {
+    font-size: 30px;
+  }
+}
