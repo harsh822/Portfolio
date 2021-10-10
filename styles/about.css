@@ -78,6 +78,53 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.main-content-container {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  max-width: 700px;
+  margin: 2% 4% 2%;
+  padding: 1rem 1.5rem;
+}
+.about-heading h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.about-heading h3 {
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+}
+.about {
+  /* padding: 1rem 1.5rem; */
+}
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  letter-spacing: 0.08rem;
+}
+ul {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  letter-spacing: 0.08rem;
+  list-style-position: inside;
+  list-style: disc;
+}
+.blue-italics {
+  color: #268bd2;
+  font-weight: 900;
+  font-style: italic;
+}
+p a {
+  text-decoration: none;
+  color: #268bd2;
+  padding: 5px 2px;
+  border-bottom: 1px solid #268bd2;
+}
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
